@@ -1,5 +1,5 @@
 
-package bodySpica.Functional is
+package body Spica.Functional is
    use type A.State_Type;
 
    function Map

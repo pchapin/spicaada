@@ -1,0 +1,12 @@
+name = "spica"
+description = "A library of algorithms and data structures"
+version = "0.1.0-dev"
+licenses = "Apache-2.0"
+
+authors = ["Peter Chapin"]
+maintainers = ["Peter Chapin <spicacality@kelseymountain.org>"]
+maintainers-logins = ["pchapin"]
+website = "https://github.com/pchapin/spicaada"
+
+[build-switches]
+"*".style_checks = "No"

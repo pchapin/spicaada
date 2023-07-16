@@ -16,7 +16,7 @@ with Test_Very_Longs;
 use Ada.Exceptions;
 use Ada.Text_IO;
 
-procedure Tests is
+procedure Spica_Tests is
 
    procedure Execute_Test(Header : in String; Test_Procedure : access procedure) is
       Decoration : String(1 .. Header'Length) := (others => '=');
@@ -76,4 +76,4 @@ begin
 
    -- Longest Commong Subsequence
    Execute_Test("Longest Common Subsequence", Test_Longest_Common_Subsequence'Access);
-end Tests;
+end Spica_Tests;

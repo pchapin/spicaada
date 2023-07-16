@@ -9,8 +9,8 @@ package Spica.Graphs is
 
    type Graph is private;
 
-   --  Vertex indicies range from 1 to some maximum value that grows dynamically. Vertex
-   --  numbering is done by this package (and thus appears arbitrary to the application).
+   -- Vertex indicies range from 1 to some maximum value that grows dynamically. Vertex
+   -- numbering is done by this package (and thus appears arbitrary to the application).
    subtype Vertex_Number_Type is Positive;
 
    -- Vertex lists are used to return information about successor and predecessor vertexes.

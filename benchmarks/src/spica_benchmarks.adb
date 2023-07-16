@@ -10,7 +10,7 @@ with Spica.KV_Stores;
 with Spica.RedBlack_Trees;
 with Spica.Splay_Trees;
 
-procedure Benchmarks is
+procedure Spica_Benchmarks is
 
    -- How many iterations?
    Iteration_Count : constant := 1_000_000;
@@ -110,4 +110,4 @@ begin
    Ordered_Insert(Splay_Tree_2, "  Splay Tree");
    Ordered_Insert(BST_2, "  Binary Search Tree");
    -- Ordered_Insert(RB_Tree_2, "  RedBlack Tree");
-end Benchmarks;
+end Spica_Benchmarks;

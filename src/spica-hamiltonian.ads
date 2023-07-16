@@ -16,6 +16,6 @@ package Spica.Hamiltonian is
    Not_Found : exception;
 
    -- Returns a Hamiltonian path of G or raises Not_Found if none exist.
-   function Hamiltonian_Path(G) return Vertex_List;
+   function Hamiltonian_Path(G : Graph) return Vertex_List;
 
 end Spica.Hamiltonian;

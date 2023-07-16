@@ -1,0 +1,19 @@
+name = "spica_tests"
+description = "Test program for the Spica library"
+version = "0.1.0-dev"
+
+authors = ["Peter Chapin"]
+maintainers = ["Peter Chapin <spicacality@kelseymountain.org>"]
+maintainers-logins = ["pchapin"]
+
+executables = ["spica_tests"]
+
+[build-switches]
+"*".style_checks = "No"
+
+[[depends-on]]
+spica = "*"
+
+[[pins]]
+spica = { path = ".." }
+
