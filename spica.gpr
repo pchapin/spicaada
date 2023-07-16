@@ -1,0 +1,26 @@
+project Spica is
+
+   for Source_Dirs use ("src", "tests", "benchmarks");
+   for Main use ("tests.adb", "benchmarks.adb");
+   
+   type Build_Type is ("Release", "Debug");
+   Build : Build_Type := external("BUILD", "Debug");
+   
+   case Build is
+      when "Release" =>
+         for Object_Dir use "build/Release";
+      when "Debug" =>
+         for Object_Dir use "build/Debug";
+   end case;
+
+   package Compiler is
+      case Build is
+         when "Release" =>
+            for Switches ("ada") use ("-gnatwcijmrz", "-O2");
+         when "Debug" =>
+            for Switches ("ada") use ("-gnatwcijmrz", "-g", "-gnata");
+      end case;
+   end Compiler;
+
+end Spica;
+
