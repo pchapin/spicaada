@@ -22,9 +22,9 @@ package body Generic_Heap_Tests is
    begin
       for I in Data_Index loop
          H.Insert(Test_Data(I));
-         H.Check_Sanity("Invalid heap after inserting test data in Test_Heap_Insert");
-         Assert(H.Size = I, "Invalid size after insert");
-         Assert(H.Top_Priority = Top_Data(I), "Invalid top element after insert");
+         H.Check_Sanity("Invalid heap after inserting " & Integer'Image(Test_Data(I)) & " in Test_Heap_Insert");
+         Assert(H.Size = I, "Invalid size after inserting " & Integer'Image(Test_Data(I)));
+         Assert(H.Top_Priority = Top_Data(I), "Invalid top element after inserting " & Integer'Image(Test_Data(I)));
       end loop;
    end Test_Heap_Insert;
 

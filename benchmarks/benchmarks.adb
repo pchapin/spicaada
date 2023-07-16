@@ -88,11 +88,11 @@ procedure Benchmarks is
    -- Create instances of the specific KV_Stores types.
    BST_1        : Positive_BSTs.Tree;
    Splay_Tree_1 : Positive_Splay_Trees.Tree;
-   RB_Tree_1    : Positive_RB_Trees.RedBlack_Tree;
+   --RB_Tree_1    : Positive_RB_Trees.RedBlack_Tree;
 
    BST_2        : Positive_BSTs.Tree;
    Splay_Tree_2 : Positive_Splay_Trees.Tree;
-   RB_Tree_2    : Positive_RB_Trees.RedBlack_Tree;
+   --RB_Tree_2    : Positive_RB_Trees.RedBlack_Tree;
 
 begin
    -- Let's precalculate the random numbers.
